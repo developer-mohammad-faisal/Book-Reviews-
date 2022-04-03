@@ -20,6 +20,10 @@ const Home = () => {
           <img width={'600px'} src="https://cdn.dribbble.com/users/92954/screenshots/3195181/books.gif" alt="" />
         </div>
       </div>
+
+
+       
+
     </Fragment>
   );
 };
