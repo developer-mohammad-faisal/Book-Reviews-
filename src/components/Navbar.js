@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
    <Fragment>
 
-<nav sticky="top" className="navbar navbar-expand-lg shadow-sm p-4 navbar-bg-color">
-  <div className="container-fluid">
+<nav  className="navbar navbar-expand-lg shadow-sm p-4 navbar-bg-color">
+  <div  className="container-fluid">
     <img width={'140px'} src="https://booksbazar.net/wp-content/uploads/2021/06/Logo-Main-004-1.png" alt="" />
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon bg-light"></span>

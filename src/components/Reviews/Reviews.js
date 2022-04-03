@@ -1,11 +1,22 @@
-import React from 'react';
-import './Reviews.css'
+import React, { Fragment } from "react";
+import { Row } from "react-bootstrap";
+import CartReviews from "../CartReviews/CartReviews";
+import useReviewCustomHook from '../hooks/ReviewCustomHook'
+import "./Reviews.css";
 
 const Reviews = () => {
+  const [reviews, setReview] = useReviewCustomHook();
   return (
-    <div>
-      <h1>This is Review page</h1>
-    </div>
+    <Fragment>
+      <h1 className="customer-review text-center">Customer Review</h1>
+      {
+          <Row xs={1} md={3} className="g-4 w-100">
+          {reviews.map((review) => (
+            <CartReviews key={review.id} review={review}></CartReviews>
+          ))}
+        </Row>
+      }
+    </Fragment>
   );
 };
 

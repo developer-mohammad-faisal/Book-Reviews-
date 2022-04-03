@@ -1,0 +1,17 @@
+.center-style{
+  align-items: center;
+  margin-left: 5px;
+}
+.cart-style{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.icon{
+  font-size: 11px;
+  color: orange;
+}
+.cart-style img{
+  width: 40px;
+  border-radius: 100%;
+}
