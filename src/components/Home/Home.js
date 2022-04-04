@@ -9,8 +9,8 @@ const Home = () => {
   const [reviews, setReview] = useReviewCustomHook();
   return (
     <Fragment>
-      <div className="row w-100 bg-color p-3">
-        <div className=" col-md-6">
+      <div className=" d-flex vh-100 flex-column-reverse flex-md-row  justify-content-between px-10 bg-color">
+        <div className="d-flex flex-column align-items-center align-items-md-start p-4">
           <h1 className="heading">
             Welcome to The <span className="book">Book Bazaar</span>
           </h1>
@@ -23,9 +23,8 @@ const Home = () => {
           </p>
           <button className="btn-hover color-7">Order Now</button>
         </div>
-        <div className="col-md-6">
+        <div className="img">
           <img
-            width={"600px"}
             src="https://cdn.dribbble.com/users/92954/screenshots/3195181/books.gif"
             alt=""
           />
@@ -41,17 +40,20 @@ const Home = () => {
           the product or service. Customer reviews are a form of <br /> customer
           feedback on electronic commerce and online shopping sites.
         </p>
-        <Link to="/reviews">
-          <button className="btn-hover color-10">More Review</button>
-        </Link>
+        <h5 className="review-title p-5 text-center">Total Customer Reviews: {reviews.length}</h5>
       </section>
 
       <section>
-        <Row xs={1} md={3} className="g-4 w-100">
-          {reviews.slice(0,3).map((review) => (
-            <CartReviews key={review.id} review={review} ></CartReviews>
+        <Row xs={1} md={3} className="g-4 mx-auto w-100">
+          {reviews.slice(0, 3).map((review) => (
+            <CartReviews key={review.id} review={review}></CartReviews>
           ))}
         </Row>
+        <div  className="text-center">
+        <Link to="/reviews">
+          <button className="btn-hover color-10 ">See all reviews</button>
+        </Link>
+        </div>
       </section>
     </Fragment>
   );

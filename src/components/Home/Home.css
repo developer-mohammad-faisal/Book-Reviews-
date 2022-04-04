@@ -53,6 +53,11 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
   background-color: rgba(169, 169, 169, 0.329);
 }
 
+.img img{
+  width: 600px; 
+}
+
+
 .heading {
   font-weight: 750;
 }
@@ -68,4 +73,8 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 
 
-
+@media only screen and (max-width: 600px) {
+  .img img {
+   width: 300px;
+  }
+}

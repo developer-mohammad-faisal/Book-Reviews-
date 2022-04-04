@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
@@ -8,6 +8,7 @@ import Blogs from './components/Blogs/Blogs';
 import About from './components/About/About';
 import { Route, Routes } from 'react-router-dom';
 import Four_O_Four_Page from './components/Four_O_Four_Page/Four_O_Four_Page';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path='*' element={<Four_O_Four_Page></Four_O_Four_Page>} ></Route>
 
       </Routes>
+
+      <Footer></Footer>
     </div>
   );
 }
