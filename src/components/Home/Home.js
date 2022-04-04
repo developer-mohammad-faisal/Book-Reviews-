@@ -48,8 +48,8 @@ const Home = () => {
 
       <section>
         <Row xs={1} md={3} className="g-4 w-100">
-          {reviews.map((review) => (
-            <CartReviews key={review.id} review={review}></CartReviews>
+          {reviews.slice(0,3).map((review) => (
+            <CartReviews key={review.id} review={review} ></CartReviews>
           ))}
         </Row>
       </section>
