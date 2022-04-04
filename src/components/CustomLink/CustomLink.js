@@ -6,9 +6,12 @@ function CustomLink({ children, to, ...props }) {
 
   return (
     <div>
-      <Link 
+      <Link
         className="ms-3"
-        style={{ color: match ? 'orange' : 'black' , textDecoration: match ? "none" : "none" }}
+        style={{
+          color: match ? "orange" : "black",
+          textDecoration: match ? "none" : "none",
+        }}
         to={to}
         {...props}
       >
@@ -18,4 +21,4 @@ function CustomLink({ children, to, ...props }) {
   );
 }
 
-export default CustomLink
+export default CustomLink;

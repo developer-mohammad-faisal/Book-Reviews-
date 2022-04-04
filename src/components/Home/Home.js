@@ -40,7 +40,9 @@ const Home = () => {
           the product or service. Customer reviews are a form of <br /> customer
           feedback on electronic commerce and online shopping sites.
         </p>
-        <h5 className="review-title p-5 text-center">Total Customer Reviews: {reviews.length}</h5>
+        <h5 className="review-title p-5 text-center">
+          Total Customer Reviews: {reviews.length}
+        </h5>
       </section>
 
       <section>
@@ -49,10 +51,10 @@ const Home = () => {
             <CartReviews key={review.id} review={review}></CartReviews>
           ))}
         </Row>
-        <div  className="text-center">
-        <Link to="/reviews">
-          <button className="btn-hover color-10 ">See all reviews</button>
-        </Link>
+        <div className="text-center">
+          <Link to="/reviews">
+            <button className="btn-hover color-10 ">See all reviews</button>
+          </Link>
         </div>
       </section>
     </Fragment>

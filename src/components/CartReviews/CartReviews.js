@@ -40,7 +40,6 @@ const CartReviews = (props) => {
           </Card>
         </Col>
       ))}
-
     </Fragment>
   );
 };

@@ -9,7 +9,6 @@ const Blogs = () => {
         {" "}
         Three Question and Answerer{" "}
       </h1>
-
       <Accordion className="m-5 p-5" defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>

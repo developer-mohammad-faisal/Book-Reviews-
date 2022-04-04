@@ -1,15 +1,15 @@
-.center-style{
+.center-style {
   align-items: center;
   margin-left: 5px;
 }
-.cart-style{
+.cart-style {
   margin-top: 20px;
 }
-.icon{
+.icon {
   font-size: 11px;
   color: orange;
 }
-.cart-style img{
+.cart-style img {
   width: 40px;
   border-radius: 100%;
 }
