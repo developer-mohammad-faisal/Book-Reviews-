@@ -1,6 +1,6 @@
 # Getting Started with Book Bazaar
 
- ## This project was react bootstrapped with [Book Bazaar](https://github.com/facebook/create-react-app)
+ ## This project was react bootstrapped with [Book Bazaar](https://book-bazaar.netlify.app/home)
 
 - এই ওয়েবসাইট শুধু বুক রিভিউ রিলেটেড করা হয়েছে
 - এখানে ৫ টা রাউট দেওয়া হয়েছে Home, Reviews, Dashboard, Blogs, About
