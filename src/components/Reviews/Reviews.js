@@ -8,7 +8,7 @@ const Reviews = () => {
   const [reviews, setReview] = useReviewCustomHook();
   return (
     <Fragment>
-      <h1 className="customer-review text-center">Customer Review</h1>
+      <h1 className="review-title p-5 text-center">Customer Review</h1>
       {
           <Row xs={1} md={3} className="g-4 w-100">
           {reviews.map((review) => (
